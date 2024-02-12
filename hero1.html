@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+  <style>
+
+
+
+
+    .scrol {
+      margin-bottom: 10%;
+    }
+
+    .space {
+      margin-bottom: 5%;
+      padding-left: 20%;
+      padding-right: 20%;
+      padding-bottom: 20%;
+      padding-top: 5%;
+      
+
+    }
+
+    .black {
+      background-color: black;
+      width: 100%;
+      height: 100%;
+    }
+    body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+.venkat{
+  padding-left: 30%;
+  padding-bottom: 9%;
+  padding-right: 30%;
+  margin-top: -10%;
+}
+.v{
+  margin-top: -8%;
+}
+.h{
+  html * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+body {
+	background-color: #262626;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  margin-left: 50%;
+}
+
+i {
+	position: relative;
+	display: block;
+	width: 500px;
+	height: 300px;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+i:before, i:after {
+	content: '⥪';
+	position: absolute;
+	top: 50%;
+	left: 1rem;
+	z-index: 2;
+	width: 2rem;
+	height: 2rem;
+	background: dodgerblue;
+	color: white;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	pointer-events: none;
+}
+
+i:after {
+	content: '⥭';
+	left: auto;
+	right: 1rem;
+}
+
+/* I haven't found a way for IE and Edge to let me style inputs that way */
+input {
+	appearance: none;
+	-ms-appearance: none;
+	-webkit-appearance: none;
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 5px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	transform: translateX(100%);
+	transition: transform ease-in-out 400ms;
+	z-index: 1;
+}
+
+input:focus {
+	outline: none;
+}
+
+input:after {
+	content: attr(title);
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	background-color: rgba(0,0,0,0.4);
+	color: white;
+	padding: .5rem;
+	font-size: 1rem;
+	border-radius: 5px;
+}
+
+input:not(checked):before {
+	content: '';
+	position: absolute;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	top: 50%;
+	left: calc(-100% + 1rem);
+}
+
+input:checked:before {
+	display: none;
+	left: 1rem;
+}
+
+input:checked {
+	transform: translateX(0);
+	pointer-event: none;
+	z-index: 0;
+	box-shadow: -5px 10px 20px -15px rgba(0,0,0,1);
+}
+
+input:checked + input:before {
+	left: -3rem;
+}
+
+input:checked + input ~ input:before {
+	display: none;
+}
+}
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { ... }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { ... }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { ... }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { ... }
+
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) { ... }
+
+// XX-Large devices (larger desktops)
+// No media query since the xxl breakpoint has no upper bound on its width
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+); {
+    display: flex: .scrol;;
+    display: flex: .black;;
+    display: flex: .flip-card;;
+    display: flex: .flip-card-back;;
+    display: flex: .flip-card-front;;
+    display: flex: .flip-card-inner;;
+    display: flex: .flip-card:hover;;
+    display: flex: .h;;
+    display: flex: .venkat;;
+    display: flex: .v;;
+    display: flex: .space;;
+
+  
+}
+
+    
+  </style>
+</head>
+<body>
+  <div class="fix">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- Image and text -->
+      <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="logo.gif" width="30" height="30" class="d-inline-block align-top" alt="">
+          <i style="color: red;"><b>Avengers</b></i>
+        </a>
+      </nav>
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="https://www.indiaglitz.com/telugu-actor-photos">Home <span
+                class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link"
+              href="https://www.bollymoviereviewz.com/2021/12/tollywood-box-office-collection-report-verdict-telugu-movies-collection">Avengers Box Office</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+              About Movies in 2012-2019
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href=" https://www.imdb.com/title/tt0848228/?ref_=ttls_li_tt"style="background-color: #d00cea;">Avengers</a>
+              <a class="dropdown-item" href=https://en.wikipedia.org/wiki/Guntur_Kaaram" style="background-color: pink;">Avengers: Age of Ultron </a>
+              <a class="dropdown-item" href=https://en.wikipedia.org/wiki/Naa_Saami_Ranga" style="background-color: #0ceac9;">Avengers: Infinity War</a>
+              <a class="dropdown-item" href=https://en.wikipedia.org/wiki/Saindhav" style="background-color: chocolate;">Avengers: Endgame</a>
+              <a class="dropdown-item" href=https://en.wikipedia.org/wiki/Salaar:_Part_1_%E2%80%93_Ceasefire style="background-color: chartreuse;"">Iron Man</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href=https://en.wikipedia.org/wiki/Animal_(2023_Indian_film)" style="background-color: yellowgreen;">Iron Man 2</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href=https://www.indiaglitz.com/telugu-actor-photos">Avengers Actors</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="scrol">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="avangers text.jpg" class="d-block w-100" alt="..." width="100%" hidden30%>
+          </div>
+          <div class="carousel-item">
+            <img src="QyvM.gif" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="iii.gif" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="827231-wallpaper-4k-avengers-clearance-51-off.jpg" class="d-block w-100" alt="..." height="90%">
+          </div>
+          <div class="carousel-item">
+            <img src="CFha.gif" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="space">
+    <div class="row row-cols-1 row-cols-md-3">
+      <div class="col mb-4">
+        <div class="card" style="text-align: center; border-radius: 5%; border:2px solid #194eeb; padding:3px; margin:5px”">
+          <img src="URhk.gif" class="card-img-top" alt="..." height="200px" style="border-radius: 5%;">
+          <div class="card-body">
+            <h5 class="card-title">CAPTAN-AMERICA</h5>
+            <p class="card-text">About Movie</p>
+            <a href="https://en.wikipedia.org/wiki/Captain_America:_The_First_Avenger" class="btn btn-primary">book movie tickets</a>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card" style="text-align: center;border-radius: 5%; border:2px solid #07f958; padding:3px; margin:5px”">
+          <img src="black-panther.gif" class="card-img-top" alt="..." height="200px" style="border-radius: 5%;">
+          <div class="card-body">
+            <h5 class="card-title">BLACK PANTHER</h5>
+            <p class="card-text">About Movie</p>
+            <a href="https://en.wikipedia.org/wiki/Black_Panther_(film)" class="btn btn-primary">book movie tickets</a>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card" style="text-align: center; border-radius: 5%; border:2px solid #f30b41; padding:3px; margin:5px”">
+          <img src="elizabeth-olsen-scarlett-witch.gif" class="card-img-top" alt="..." height="200px" style="border-radius: 5%;">
+          <div class="card-body">
+            <h5 class="card-title">ELIZABETH</h5>
+            <p class="card-text">About Movie</p>
+            <a href="https://en.wikipedia.org/wiki/Elizabeth_Marvel" class="btn btn-primary">book movie tickets</a>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card" style="text-align: center; border-radius: 5%; border:2px solid #0ceac9; padding:3px; margin:5px”">
+          <img src="thor-the-dark-world.gif" class="card-img-top" alt="..." height="200px" style="border-radius: 5%;">
+          <div class="card-body">
+            <h5 class="card-title">THOR</h5>
+            <p class="card-text">About Movie</p>
+            <a href="https://en.wikipedia.org/wiki/The_Marvels" class="btn btn-primary">book movie tickets</a>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card" style="text-align: center;border-radius: 5%; border:2px solid #e9750f; padding:3px; margin:5px”">
+          <img src="hulk-smash.gif" class="card-img-top" alt="..." height="200px" style="border-radius: 5%;">
+          <div class="card-body">
+            <h5 class="card-title">HULK</h5>
+            <p class="card-text">About Movie</p>
+            <a href="https://en.wikipedia.org/wiki/Hulk" class="btn btn-primary">book movie tickets</a>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card" style="text-align: center;border-radius: 5%; border:2px solid #ddf816; padding:3px; margin:5px”">
+          <img src="iron-man-tony-stark.gif" class="card-img-top" alt="..." height="200px" style="border-radius: 5%;">
+          <div class="card-body">
+            <h5 class="card-title">IRON-MAN</h5>
+            <p class="card-text">About Movie</p>
+            <a href="https://en.wikipedia.org/wiki/Iron_Man" class="btn btn-primary">book movie tickets</a>
+          </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="card-deck" style="margin-left: 10%; margin-right: 10%;margin-bottom: 10%; margin-top: -20%; ">
+    <div class="card" style="text-align: center; background-color:lightsalmon; border-radius: 5%;">
+      <img src="captain-marvel-how-you-doin.gif" class="card-img-top" alt="..." height="300px" width="300px"style="border-radius: 50%;">
+      <div class="card-body" style="height: 200px;">
+        <h5 class="card-title" style="color: cyan;">CAPTAIN-MARVEL</h5>
+        <p class="card-text">Movies</p>
+        <a href="https://www.google.com/search?sca_esv=989459b10be17b82&rlz=1C1CHBF_enIN937IN937&sxsrf=ACQVn0_DTLl4jdwG-hybYtrcwyBfiY3lLQ:1707399030182&q=Virupaksha&stick=H4sIAAAAAAAAAONgFuLWz9U3MDTIyysqMlfi1U_XNzQsTi5Lyc1IydCSyE620i9IzS_ISQVSRcX5eVa5-WWZqcWLWLnCMotKCxKzizMSAVcclLVFAAAA&sa=X&ved=2ahUKEwiN5LuF7ZuEAxV-bGwGHTOPCpkQ9OUBegQIIxAD&biw=1242&bih=552&dpr=1.1"
+          class="btn btn-primary">Click Here</a>
+      </div>
+    </div>
+    <div class="card" style="text-align: center; background-color: darkgoldenrod; border-radius: 5%;">
+      <img src="benedict-cumberbatch-dr-strange.gif" class="card-img-top" alt="..." height="300px" style="border-radius: 50%;">
+      <div class="card-body">
+        <h5 class="card-title" style="color: blue;">Dr-Strange</h5>
+        <p class="card-text">Movies</p>
+        <a href="https://www.google.com/search?q=ram+charan+movies+list&sca_esv=989459b10be17b82&rlz=1C1CHBF_enIN937IN937&sxsrf=ACQVn0_DTLl4jdwG-hybYtrcwyBfiY3lLQ%3A1707399030182&ei=dtfEZY3RCv7YseMPs56qyAk&ved=0ahUKEwiN5LuF7ZuEAxV-bGwGHTOPCpkQ4dUDCBA&uact=5&oq=ram+charan+movies+list&gs_lp=Egxnd3Mtd2l6LXNlcnAiFnJhbSBjaGFyYW4gbW92aWVzIGxpc3QyChAAGIAEGEYY-wEyBRAAGIAEMgUQABiABDIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjILEAAYgAQYigUYkQIyBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yFhAAGIAEGEYY-wEYlwUYjAUY3QTYAQNIsCJQ_wJYiyBwAXgAkAEAmAGuAaABmBCqAQQwLjE3uAEDyAEA-AEBwgIKEAAYRxjWBBiwA8ICDRAAGIAEGIoFGEMYsAPCAg4QABjkAhjWBBiwA9gBAcICExAuGIAEGIoFGEMYyAMYsAPYAQLCAgwQABiABBgNGEYY-wHCAgcQABiABBgNwgIYEAAYgAQYDRhGGPsBGJcFGIwFGN0E2AEDwgIQEAAYgAQYigUYQxixAxiDAeIDBBgAIEGIBgGQBhO6BgYIARABGAm6BgYIAhABGAi6BgYIAxABGBM&sclient=gws-wiz-serp"
+          class="btn btn-primary">Click Here</a>
+      </div>
+    </div>
+    <div class="card" style="text-align: center; background-color: pink; border-radius: 5%;">
+      <img src="the-vision-vision.gif" class="card-img-top" alt="..." height="300px" style="border-radius: 50%;">
+      <div class="card-body">
+        <h5 class="card-title" style="color: lime;">vision</h5>
+        <p class="card-text">Movies</p>
+        <a href="https://www.google.com/search?q=pawan+kalyan+movies+list&sca_esv=989459b10be17b82&rlz=1C1CHBF_enIN937IN937&sxsrf=ACQVn0_DTLl4jdwG-hybYtrcwyBfiY3lLQ%3A1707399030182&ei=dtfEZY3RCv7YseMPs56qyAk&ved=0ahUKEwiN5LuF7ZuEAxV-bGwGHTOPCpkQ4dUDCBA&uact=5&oq=pawan+kalyan+movies+list&gs_lp=Egxnd3Mtd2l6LXNlcnAiGHBhd2FuIGthbHlhbiBtb3ZpZXMgbGlzdDIPEAAYgAQYFBiHAhhGGPsBMgsQABiABBiKBRiRAjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yCxAAGIAEGIoFGJECMgUQABiABDIGEAAYBxgeMhsQABiABBgUGIcCGEYY-wEYlwUYjAUY3QTYAQNIvTRQ6wNYqTJwB3gAkAEFmAHLBaABtyqqAQ0xLjYuMy4zLjIuMi4xuAEDyAEA-AEBwgIKEAAYRxjWBBiwA8ICDRAAGIAEGIoFGEMYsAPCAg4QABjkAhjWBBiwA9gBAcICExAuGIAEGIoFGEMYyAMYsAPYAQLCAgwQABiABBgNGEYY-wHCAgcQABiABBgNwgIYEAAYgAQYDRhGGPsBGJcFGIwFGN0E2AEDwgIQEAAYgAQYigUYQxixAxiDAeIDBBgAIEGIBgGQBhO6BgYIARABGAm6BgYIAhABGAi6BgYIAxABGBM&sclient=gws-wiz-serp"
+          class="btn btn-primary">Click Here</a>
+      </div>
+    </div>
+  </div>
+<!----flip cards--->
+<div class="col mb-4">
+<div class="flip-card" style="margin-left: 10%; margin-bottom: 10%;">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="natasha-romanoff.gif" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Natasha</h1> 
+      <p>avanger</p>
+    </div>
+  </div>
+</div>
+<!------>
+<div class="venkat">
+<div class="flip-card" style="margin-left: 10%;">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="spider-man-no-way-home-spider-man.gif" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>spider-man</h1> 
+      <p>avanger</p>
+    </div>
+  </div>
+</div>
+</div>
+<!----->
+<div class="v">
+  <div class="flip-card" style="margin-left: 10%;">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="batman-im.gif" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>batman</h1> 
+        <p>avanger</p>
+      </div>
+    </div>
+  </div>
+  </div>
+  <br>
+  <br>
+  <!----->
+  
+  
+  <!----->
+  <div class="h" style="margin-bottom: 40%; margin-left: 20%; margin-right: 2%; ">
+  <i>
+    <input checked type="radio" name="s" style="background-image: url('bucky-barnes.gif');" title="Random Picture 1">
+    <input type="radio" name="s" style="background-image: url('fusionanimations-godspeed.gif');" title="Random Picture 2">
+    <input type="radio" name="s" style="background-image: url('guardians-of-the-galaxy-karen-gillian.gif');" title="Random Picture 4">
+    <input type="radio" name="s" style="background-image: url('groot-babygroot.gif');" title="Random Picture 5">
+    <input type="radio" name="s" style="background-image: url('gamora-smiling.gif');" title="Random Picture 6">
+    <input type="radio" name="s" style="background-image: url('JZcW.gif');" title="Random Picture 7">
+  </i>
+  </div>
+
+</body>
+</html>
